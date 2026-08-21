@@ -272,6 +272,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service.exynos
 
+# Prebuilt Apps
+PRODUCT_PACKAGES += \
+    AuroraStore \
+    AuroraServices \
+    Droid-ify \
+    Fossify-File-Manager \
+    Key-Verifier-Blocker \
+    SafetyCore-Blocker
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.universal5433 \
@@ -337,7 +346,7 @@ PRODUCT_COPY_FILES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2017-08-01
+    ro.lineage.build.vendor_security_patch=2026-06-05
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
